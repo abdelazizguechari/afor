@@ -16,6 +16,8 @@
 
 	<title>admin panel</title>
 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +44,7 @@
 
 	
 	  <!-- CSS -->
-	  <link rel="stylesheet" href={{asset('backend/assets/css/demo1/stylee.css')}}>
+
 	  <!-- End CSS -->
 
 	<!-- inject:css -->
@@ -165,7 +167,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 	<script src="{{asset('backend/assets/js/code/code.js')}}"></script>
 
-	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
     <!-- Scripts -->
@@ -230,6 +232,8 @@ var theme = "{{ $theme }}";
   </script>
 
   <script src="{{asset('backend/assets/js/dashboard-dark.js')}}"></script>
+  <script src="{{asset('backend/assets/js/code/api.js')}}"></script>
+
 
 </body>
 </html>    

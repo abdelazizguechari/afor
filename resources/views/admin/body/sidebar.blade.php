@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Auth;
   <nav class="sidebar">
     <div class="sidebar-header">
       <a href="#" class="sidebar-brand">
-        DMT<span style="color:green;">ENTV</span>
+        NBR<span style="color:green;">Airways</span>
       </a>
       <div class="sidebar-toggler not-active">
         <span></span>
@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Auth;
 
     <div class="sidebar-body">
       <ul class="nav">
-        <li class="nav-item nav-category mb-2">{{ __('navbar.dashboard') }}</li>
+        <li class="nav-item nav-category mb-2">Tableau de bord</li>
 
         <li class="nav-item">
           <a href="{{ route('admin.dashboard') }}" class="nav-link">
@@ -32,39 +32,40 @@ use Illuminate\Support\Facades\Auth;
           </a>
         </li>
 
-        <li class="nav-item nav-category mt-2 mb-2">{{ __('navbar.add_car') }}</li>
+              <li class="nav-item nav-category mt-2 mb-2">Gestion des Avions</li>
 
-        <li class="nav-item">
-          <a href="{{ route('add.car') }}" class="nav-link">
-            <i class="link-icon" data-feather="plus"></i>
-            <span class="link-title">{{ __('navbar.add_car') }}</span>
-          </a>
-        </li>
+          <li class="nav-item">
+              <a href="{{ route('airports.index') }}" class="nav-link">
+                  <i class="material-icons link-icon">flight</i>
+                  <span class="link-title">Nouvelle Aéroport</span>
+              </a>
+          </li>
 
-        <li class="nav-item">
-          <a href="{{ route('add') }}" class="nav-link">
-            <i class="link-icon" data-feather="user"></i>
-            <span class="link-title">{{ __('navbar.add_driver') }}</span>
-          </a>
-        </li>
+          <li class="nav-item">
+              <a href="{{ route('add') }}" class="nav-link">
+                  <i class="material-icons link-icon">flight_takeoff</i>
+                  <span class="link-title">Nouvelle Avion</span>
+              </a>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="collapse" href="#event" role="button" aria-expanded="false" aria-controls="event">
-            <i class="link-icon" data-feather="layout"></i>
-            <span class="link-title">{{ __('navbar.missions_management') }}</span>
-            <i class="link-arrow" data-feather="chevron-down"></i>
-          </a>
+          <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#event" role="button" aria-expanded="false" aria-controls="event">
+                  <i class="material-icons link-icon">location_on</i>
+                  <span class="link-title">Gestion Destinations</span>
+               <i class="link-arrow" data-feather="chevron-down"></i>
+              </a>
+        
           
           <div class="collapse" id="event">
             <ul class="nav sub-menu">
               <li class="nav-item">
-                <a href="{{ route('missions.create.transportation') }}" class="nav-link">{{ __('navbar.transportation') }}</a>
+                <a href="" class="nav-link">ajouter les vole</a>
               </li>
               <li class="nav-item">
-                <a href="{{ route('missions.create.mission') }}" class="nav-link">{{ __('navbar.mission') }}</a>
+                <a href="" class="nav-link">ajouter destination </a>
               </li>
               <li class="nav-item">
-                <a href="{{ route('missions.create.events') }}" class="nav-link">{{ __('navbar.organize_event') }}</a>
+                <a href="" class="nav-link">ajouter staff</a>
               </li>
             </ul>
           </div>
@@ -73,16 +74,16 @@ use Illuminate\Support\Facades\Auth;
         <li class="nav-item nav-category mt-2 mb-2">{{ __('navbar.available_cars') }}</li>
 
         <li class="nav-item">
-          <a href="{{ route('admin.ourcars') }}" class="nav-link">
+          <a href="" class="nav-link">
             <i class="link-icon" data-feather="activity"></i>
-            <p class="link-title">{{ __('navbar.available_cars') }}</p>
+            <p class="link-title">notre airpots</p>
           </a>
         </li>
 
         <li class="nav-item">
-          <a href="{{ route('our.drivers') }}" class="nav-link">
+          <a href="" class="nav-link">
             <i class="link-icon" data-feather="users"></i>
-            <span class="link-title">{{ __('navbar.registered_drivers') }}</span>
+            <span class="link-title">notre avions</span>
           </a>
         </li>
 
@@ -95,13 +96,13 @@ use Illuminate\Support\Facades\Auth;
           <div class="collapse" id="missions">
             <ul class="nav sub-menu">
               <li class="nav-item">
-                <a href="{{ route('missions.index.transportation') }}" class="nav-link">{{ __('navbar.transportation') }}</a>
+                <a href="" class="nav-link">{{ __('navbar.transportation') }}</a>
               </li>
               <li class="nav-item">
-                <a href="{{ route('missions.index') }}" class="nav-link">{{ __('navbar.mission') }}</a>
+                <a href="" class="nav-link">{{ __('navbar.mission') }}</a>
               </li>
               <li class="nav-item">
-                <a href="{{ route('events.index') }}" class="nav-link">{{ __('navbar.organize_event') }}</a>
+                <a href="" class="nav-link">{{ __('navbar.organize_event') }}</a>
               </li>
             </ul>
           </div>
@@ -112,19 +113,19 @@ use Illuminate\Support\Facades\Auth;
 <li class="nav-item">
   <a class="nav-link" data-bs-toggle="collapse" href="#uiComponents" role="button" aria-expanded="false" aria-controls="uiComponents">
     <i class="link-icon" data-feather="settings"></i>
-    <span class="link-title">maintenance des voitures</span>
+    <span class="link-title">maintenance des avions</span>
     <i class="link-arrow" data-feather="chevron-down"></i>
   </a>
   <div class="collapse" id="uiComponents">
     <ul class="nav sub-menu">
       <li class="nav-item">
-        <a href="{{ route('Datain.maintenance') }}" class="nav-link">actuellement en maintenance</a>
+        <a href="" class="nav-link">actuellement en maintenance</a>
       </li>
       <li class="nav-item">
-        <a href="{{ route('man.intern') }}" class="nav-link">Gérer la maintenance interne</a>
+        <a href="" class="nav-link">Gérer la maintenance interne</a>
       </li>
       <li class="nav-item">
-        <a href="{{ route('nos.intern') }}" class="nav-link">Les maintenance intern</a>
+        <a href="" class="nav-link">Les maintenance intern</a>
       </li>
     </ul>
   </div>
@@ -133,16 +134,16 @@ use Illuminate\Support\Facades\Auth;
 <li class="nav-item">
   <a class="nav-link" data-bs-toggle="collapse" href="#conducteur" role="button" aria-expanded="false" aria-controls="conducteur">
     <i class="link-icon" data-feather="clipboard"></i>
-    <span class="link-title">Gérer les conducteurs</span>
+    <span class="link-title">Gérer les staff</span>
     <i class="link-arrow" data-feather="chevron-down"></i>
   </a>
   <div class="collapse" id="conducteur">
     <ul class="nav sub-menu">
       <li class="nav-item">
-        <a href="{{ route('driver.conger') }}" class="nav-link">Conducteurs en congé</a>
+        <a href="" class="nav-link">Conducteurs en congé</a>
       </li>
       <li class="nav-item">
-        <a href="{{ route('Cond.qtr') }}" class="nav-link">Conducteurs suspendue</a>
+        <a href="" class="nav-link">Conducteurs suspendue</a>
       </li>
     </ul>
   </div>
@@ -157,10 +158,10 @@ use Illuminate\Support\Facades\Auth;
   <div class="collapse" id="stock-pages">
     <ul class="nav sub-menu">
       <li class="nav-item">
-        <a href="{{ route('add.stock') }}" class="nav-link">Ajouter un article au stock</a>
+        <a href="" class="nav-link">Ajouter un article au stock</a>
       </li>
       <li class="nav-item">
-        <a href="{{ route('all.stock') }}" class="nav-link">Consulter les stocks actuels</a>
+        <a href="" class="nav-link">Consulter les stocks actuels</a>
       </li>
     </ul>
   </div>
@@ -178,11 +179,11 @@ use Illuminate\Support\Facades\Auth;
             <ul class="nav sub-menu">
               
               <li class="nav-item">
-                <a href="{{ route('mission.archives') }}" class="nav-link">{{ __('navbar.mission_archives') }}</a>
+                <a href="" class="nav-link">{{ __('navbar.mission_archives') }}</a>
             </li>
             
               <li class="nav-item">
-                <a href="{{ route('maintenance.archive') }}" class="nav-link">{{ __('navbar.maintenance_archive') }}</a>
+                <a href="" class="nav-link">{{ __('navbar.maintenance_archive') }}</a>
               </li>
               <li class="nav-item">
                 <a href="" class="nav-link">{{ __('navbar.driver_vacation_archive') }}</a>
@@ -202,46 +203,46 @@ use Illuminate\Support\Facades\Auth;
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{ route('all.role') }}" class="nav-link">
+            <a href="" class="nav-link">
               <i class="link-icon" data-feather="shield"></i>
               <span class="link-title">{{ __('navbar.all_roles') }}</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{ route('add.roles.permission') }}" class="nav-link">
+            <a href="" class="nav-link">
               <i class="link-icon" data-feather="lock"></i>
               <span class="link-title">{{ __('navbar.roles_in_permission') }}</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{ route('all.roles.permission') }}" class="nav-link">
+            <a href="" class="nav-link">
               <i class="link-icon" data-feather="lock"></i>
               <span class="link-title">{{ __('navbar.roles_in_permissions') }}</span>
             </a>
           </li>
           <li class="nav-item nav-category mt-2 mb-2">{{ __('navbar.admin_users') }}</li>
           <li class="nav-item">
-            <a href="{{ route('add.admin') }}" class="nav-link">
+            <a href="" class="nav-link">
               <i class="link-icon" data-feather="user-plus"></i>
               <span class="link-title">{{ __('navbar.add_admin') }}</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{ route('Our.admins') }}" class="nav-link">
+            <a href="" class="nav-link">
               <i class="link-icon" data-feather="users"></i>
               <span class="link-title">{{ __('navbar.our_admins') }}</span>
             </a>
           </li>
           <li class="nav-item nav-category mt-2 mb-2">{{ __('navbar.logs') }}</li>
           <li class="nav-item">
-            <a href="{{ route('logs.index') }}" class="nav-link">
+            <a href="" class="nav-link">
               <i class="link-icon" data-feather="file-text"></i>
               <span class="link-title">{{ __('navbar.logs') }}</span>
             </a>
           </li>
           <li class="nav-item nav-category mt-2 mb-2">{{ __('navbar.faq') }}</li>
           <li class="nav-item">
-            <a href="{{ route('admin.faq') }}" class="nav-link">
+            <a href="" class="nav-link">
               <i class="link-icon" data-feather="help-circle"></i>
               <span class="link-title">{{ __('navbar.faq') }}</span>
             </a>

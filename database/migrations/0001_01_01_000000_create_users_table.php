@@ -11,38 +11,33 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('firstname');
-            $table->string('lastname');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('photo')->nullable(); 
-            $table->string('phone')->nullable();
-            $table->string('mat')->nullable();
-            $table->string('willaya')->nullable();
-            $table->date('birthday')->nullable();
-            $table->string('address')->nullable();
-            $table->string('google_id')->nullable();
-            $table->enum('role', ['admin','agent','user'])->default('user');
-            $table->enum('status', ['active','inactive'])->default('active');
-            $table->string('password')->nullable();
-            $table->rememberToken();
-            $table->timestamps();
-        });
+       Schema::create('users', function (Blueprint $table) {
+    $table->id();
+    $table->string('firstname');
+    $table->string('lastname');
+    $table->string('email')->unique();
+    $table->timestamp('email_verified_at')->nullable();
+    $table->string('phone')->nullable();
+    $table->string('address')->nullable();
+    $table->string('passport_number')->nullable();
+    $table->string('nationality')->nullable();
+    $table->string('frequent_flyer_number')->nullable();
+    $table->string('preferred_language')->default('en');
+    $table->string('nbr_id')->nullable();
+    $table->enum('role', ['admin', 'agent', 'user'])->default('user');
+    $table->enum('status', ['active', 'inactive'])->default('active');
+    $table->string('password')->nullable();
+    $table->rememberToken();
+    $table->enum('travel_class', ['economy', 'business', 'first'])->default('economy');
+    $table->boolean('is_subscribed_newsletter')->default(false); 
+    $table->boolean('has_priority_boarding')->default(false); 
+    $table->string('seat_preference')->nullable(); 
+    $table->integer('loyalty_points')->default(0); 
+    $table->date('last_travel_date')->nullable(); 
+    $table->json('travel_preferences')->nullable(); 
+    $table->timestamps();
+});
 
-
-       
-
-    // Schema::create('missions', function (Blueprint $table) {
-    //     $table->id();
-    //     $table->string('nom_mission');
-    //     $table->string('departement');
-    //     $table->string('lieu');
-    //     $table->time('heure_debut');
-    //     $table->text('description')->nullable();
-    //     $table->timestamps();
-    // });
 
 
 

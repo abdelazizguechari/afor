@@ -28,62 +28,7 @@
 <style>h6{margin: 10px  0 10px 0;}</style>
 
 <div class="row d-flex justify-content-between">
-  <!-- Left Column -->
-
-
-  <!-- Right Column -->
-  <div class="col-12">
-    <div class="mb-5">
-      <div class="card">
-        <div  class="card-body ">
-          <div class="row">
-            <div class="d-flex justify-content-between align-items-baseline">
-              <h4 class="mb-3 mb-md-0 fs-3">Informations générales sur le département  
-                </h4>
-              <div class="dropdown mb-2">
-                <a type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item d-flex align-items-center" href="{{route('make.section')}}">
-                    <i data-feather="eye" class="icon-sm me-2"></i> <span class="">ajouter</span>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="{{route('update.section')}}">
-                    <i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Modifier</span>
-                  </a>
-                 
-                  <a class="dropdown-item d-flex align-items-center" href="javascript:;">
-                    <i data-feather="printer" class="icon-sm me-2"></i> <span class="">Imprimer</span>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="javascript:;">
-                    <i data-feather="download" class="icon-sm me-2"></i> <span class="">Télécharger</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <div class="col-12">
-              <h6>Nom du département : <span style="font-weight: 100">{{ $data->nom ?? null }}</span></h6>
-              <hr pt-3>
-              
-              <h6>Nombre d'employés dans ce département : <span style="font-weight: 100">{{ $data->nb_employes ?? null }} employés</span></h6>
-              <hr pt-3>
-              
-              <h6>Responsable du département :<span style="font-weight: 100">{{ $data->responsable ?? null }}</span></h6>
-              <hr pt-3>
-              
-              <h6>Localisation du département :<span style="font-weight: 100">{{ $data->localisation  ?? null }}</span></h6>
-              <hr pt-3>
-              
-              <h6>Contact du département :<span style="font-weight: 100">{{ $data->email  ?? null }} | {{ $data->telephone  ?? null}}</span></h6>
-              <hr pt-3>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+ 
 
 
 </div>
@@ -109,7 +54,7 @@
             </div>
             <div class="row mt-4" >
               <div class="">
-                <h3 style="text-align: center"  class="mb-2">{{  $carnumber }}</h3>
+                <h3 style="text-align: center"  class="mb-2"></h3>
                 <div class="d-flex align-items-baseline">
                 </div>
               </div>
@@ -126,7 +71,7 @@
             </div>
             <div class="row mt-4" >
               <div class="">
-                <h3 style="text-align: center"  class="mb-2">{{$driverumber}}</h3>
+                <h3 style="text-align: center"  class="mb-2"></h3>
                 <div class="d-flex align-items-baseline">
                 </div>
               </div>
@@ -393,7 +338,7 @@
 <div class="row">
   <div class="col-lg-7 col-xl-6 stretch-card">
     
-      <x-chat-aside :currentUserId="$currentUserId" :users="$users" />
+     
 
   
   </div>
@@ -428,15 +373,15 @@
               </tr>
           </thead>
           <tbody>
-              @foreach($missions as $key => $mission)
+       
               <tr>
-                  <td>{{ $key + 1 }}</td>
-                  <td>{{ $mission->name }}</td>
-                  <td>{{ $mission->mission_type }}</td>
-                  <td>{{ $mission->lieu_mission }}</td>
-                  <td>{{ $mission->mission_start }}</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
               </tr>
-              @endforeach
+
           </tbody>
           </table>
         </div>

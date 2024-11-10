@@ -11,7 +11,7 @@
 	<meta name="author" content="NobleUI">
 	<meta name="keywords" content="nobleui, bootstrap, bootstrap 5, bootstrap5, admin, tableau de bord, modèle, réactif, css, sass, html, thème, kit ui, front-end, web">
 
-	<title>entv park auto</title>
+	<title>nbrairways</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,15 +34,16 @@
 
     <!-- Styles de mise en page -->
 	<link rel="stylesheet" href="{{asset('backend/assets/css/demo2/style.css')}}">
+
     <!-- Fin des styles de mise en page -->
 
-    <link rel="shortcut icon" href="{{asset('backend/assets/images/entvlogo.png')}}" sizes="120x48" type="image/png"/>
+ 
 </head>
 <body>
 	<div class="main-wrapper">
 		<div class="page-wrapper full-page">
             
-			<div style="background-image: url('{{ asset('img/car15.jpg') }}'); background-size: cover;"  class="page-content d-flex align-items-center justify-content-center">
+			<div style="background-image: url('{{ asset('img/airline.png') }}'); background-size: cover;"  class="page-content d-flex align-items-center justify-content-center">
 
 				<div class="row w-100 mx-0 auth-page">
 					<div class="col-md-12 col-xl-6 mx-auto">
@@ -50,7 +51,7 @@
 							<div class="row">
                                 <div class="col-md-12 ps-md-0">
                                     <div class="auth-form-wrapper   px-4 py-5">
-                                        <a href="#" class="noble-ui-logo logo-light d-block mb-2">DMT<span style="color: green">ENTV</span></a>
+                                        <a href="#" class="noble-ui-logo logo-light d-block mb-2">NBR Airways</a>
                                         <h5 class="text-muted fw-normal mb-4">Bienvenue ! Connectez-vous à votre compte.</h5>
                                         @if ($errors->any())
     <div class="alert alert-danger">
