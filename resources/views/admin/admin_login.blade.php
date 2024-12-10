@@ -83,11 +83,7 @@
                                                 <p>Mot de passe oublié ?</p>
                                             </div>
                                         </a>
-                                            <div class="d-flex justify-content-center pt-7">
-                                                <button type="submit" class="btn btn-outline-primary btn-icon-text">
-                                                    Continuer avec Google <img src="{{ asset('backend/assets/images/google.svg') }}" alt="Google" style="width: 20px; height: 20px; margin-left: 8px;">
-                                                </button>
-                                            </div>
+                                            
                                         </a>
 
                                        

@@ -3,74 +3,11 @@
 @section('user')
 
 
- <div class="landing relative">
+ <div class="landing ">
       <section class="hero text-center" aria-label="home" id="home">
-        <ul class="hero-slider" data-hero-slider>
-          <li class="slider-item active" data-hero-slider-item>
-            <div class="slider-bg">
-              <img
-                 src="{{ asset('img/image/landing/parent.jpg') }}"
-                alt="Slide 1"
-                class="img-cover"
-              />
-            </div>
-            <p class="label-2 section-subtitle slider-reveal">
-              Volez vers le futur avec nous.
-            </p>
-            <h1 class="display-1 hero-title slider-reveal">
-              Découvrez la liberté de voler.
-            </h1>
-          </li>
-          <li class="slider-item" data-hero-slider-item>
-            <div class="slider-bg">
-              <img
-             src="{{ asset('img/image/landing/imgz5.png') }}"
-                alt="Slide 2"
-                class="img-cover"
-              />
-            </div>
-            <p class="label-2 section-subtitle slider-reveal">
-              Vers le ciel, ensemble.
-            </p>
-            <h1 class="display-1 hero-title slider-reveal">
-              Où chaque vol est une aventure.
-            </h1>
-          </li>
-          <li class="slider-item" data-hero-slider-item>
-            <div class="slider-bg">
-              <img
-             src="{{ asset('img/image/landing/imgz2.png') }}"
-                alt="Slide 3"
-                class="img-cover"
-              />
-            </div>
-            <p class="label-2 section-subtitle slider-reveal">
-              Faites confiance au voyage.
-            </p>
-            <h1 class="display-1 hero-title slider-reveal">
-              Embrassez le ciel.
-            </h1>
-          </li>
-        </ul>
 
-        <button
-          class="slider-btn prev"
-          aria-label="slide to previous"
-          data-prev-btn
-        >
-          <ion-icon name="chevron-back"></ion-icon>
-        </button>
-        <button
-          class="slider-btn next"
-          aria-label="slide to next"
-          data-next-btn
-        >
-          <ion-icon name="chevron-forward"></ion-icon>
-        </button>
-
-        <!-- Search section at the bottom of the slider -->
-        <div
-          class="searching border p-6 rounded-lg shadow-md bg-white bg-opacity-80 w-4/5 mx-auto relative z-10 mt-8"
+       <div
+          class="searching border p-6 rounded-lg shadow-md bg-white bg-opacity-80 w-4/5 mx-auto bottom-[55px] relative z-10 mt-56"
         >
           <h2 class="text-2xl font-bold mb-4">Search Flights</h2>
           <form action="">
@@ -200,59 +137,23 @@
             </div>
           </form>
         </div>
+
       </section>
-    </div>
+
+
+</div>
 
    
- 
-    <!-- end landing  -->
-
-    <!-- event -->
-
-    <div class="party">
-  <div   class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <a href="{{route('event.dubai')}}">
-          <img style="height:100%" src="{{ asset('img/image/faite/1.png') }}" alt="Dubai Event" />
-        </a>
-      </div>
-      <div class="swiper-slide">
-        <a href="{{ url('event/italy.html') }}">
-          <img src="{{ asset('img/image/faite/2.png') }}" alt="Italy Event" />
-        </a>
-      </div>
-      <div class="swiper-slide">
-        <a href="{{ url('event/index.html') }}">
-          <img src="{{ asset('img/image/faite/6.png') }}" alt="Event Index" />
-        </a>
-      </div>
-      <div class="swiper-slide">
-        <a href="{{ url('event/paris.html') }}">
-          <img src="{{ asset('img/image/faite/4.png') }}" alt="Paris Event" />
-        </a>
-      </div>
-      <div class="swiper-slide">
-        <a href="{{ url('event/span.html') }}">
-          <img src="{{ asset('img/image/faite/5.png') }}" alt="Span Event" />
-        </a>
-      </div>
-    </div>
 
 
-  </div>
-  <div class="swiper-pagination"></div>
+<div class=" bg-slate-400 h-full text-yellow-600 py-8">
+<p class="text-red-200"> this is the end </p>
 </div>
+
 
     <!-- end event -->
 
-    <div class="section">
-      <div class="container">
-        <h3 class="text-center text-3xl text-white">
-          Explorez le monde avec notre nouvelle carte
-        </h3>
-      </div>
-    </div>
+    
 
     <div class="section1 py-6">
       <div class="contain">

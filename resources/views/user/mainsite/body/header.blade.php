@@ -24,28 +24,7 @@
 </nav>
 
 
-    <div class="menu">
-      <div class="language-dropdown">
-        <button onclick="toggleLanguageDropdown()">
-          Fr <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div id="language-dropdown-menu" class="dropdown-content">
-          <a href="#" onclick="changeLanguage('ar')">Arabe</a>
-          <a href="#" onclick="changeLanguage('fr')">Français</a>
-          <a href="#" onclick="changeLanguage('es')">Español</a>
-          <a href="#" onclick="changeLanguage('en')">English</a>
-        </div>
-      </div>
-
-      <div class="language-dropdown">
-        <button onclick="toggleLoginDropdown()">
-          Se connecter <i class="fa-solid fa-user"></i>
-        </button>
-        <div id="login-dropdown-menu" class="dropdown-content">
-          <a href="#" onclick="handleLogin()">Se connecter</a>
-          <a href="#" onclick="handleSignUp()">Créer un compte</a>
-        </div>
-      </div>
+    
     </div>
   </div>
 </header>
