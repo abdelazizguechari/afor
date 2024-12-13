@@ -7,7 +7,7 @@
       <section class="hero text-center" aria-label="home" id="home">
 
        <div
-          class="searching border p-6 rounded-lg shadow-md bg-white bg-opacity-80 w-4/5 mx-auto bottom-[55px] relative z-10 mt-56"
+          class="searching border rounded-lg shadow-md bg-white bg-opacity-80  mx-auto  z-10 "
         >
           <h2 class="text-2xl font-bold mb-4">Search Flights</h2>
           <form action="">
@@ -145,46 +145,62 @@
 
    
 
+<main>
 
-<div class=" bg-slate-400 h-full text-yellow-600 py-8">
-<p class="text-red-200"> this is the end </p>
+  <div class="container">
+
+  <div class="img">
+    <img src="{{ asset('img/card.png') }}" alt="card">
+  </div>
+
+  
+
+
+  <div class="text">
+
+    
+    <h1>Explorez le monde avec nos nouvelles cartes</h1>
+    <p>La NBR Card vous permet de voyager sans limites, avec un accès simplifié à tous les trajets. Une seule carte pour explorer le monde, sans contrainte</p>
+
+    <p> <a href="">get the card</a> </p>
+     
+  
+  
+  </div>
+
 </div>
-
+</main>
 
     <!-- end event -->
 
     
 
     <div class="section1 py-6">
-      <div class="contain">
-        <h1 class="ml-5 text-center pb-3 pt-4 text-2xl font-black">
-          decoverier notre service
+      <div class="container">
+        <h1 class="ml-2 pb-1 font-black pt-4 text-2xl ">
+          information
         </h1>
-        <hr />
+
         <div class="mt-8 flex justify-between">
           <!-- Card 1 -->
           <div class="image flex-1 mx-2">
             <div class="border rounded-lg overflow-hidden h-full flex flex-col">
               <!-- Set a fixed height for the card -->
               <img
-                src="{{ asset('img/image/Airlines Company Profile Presentation.png') }}"
+                src="{{ asset('img/image/info/info4.png') }}"
                 alt=""
                 class="w-full h-auto"
               />
               <div class="p-4 flex flex-col flex-grow">
-                <h5 class="text-lg font-bold">
-                  Explorez nos options de transportation
+                <h5 class="text-lg font-bold pb-3">
+                  Vols charter 
                 </h5>
                 <p class="text-gray-600">
-                  Recherchez les meilleures offres pour votre prochain vol
+                  offre des vols charters sur mesure, incluant forfaits touristiques, billets individuels et services pour groupes.
                 </p>
                 <div class="mt-auto text-right">
                   <!-- Use mt-auto to push the button to the bottom -->
-                  <button
-                    class="bg-violet-950 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-3 rounded"
-                  >
-                    next
-                  </button>
+                  
                 </div>
               </div>
             </div>
@@ -194,20 +210,15 @@
           <div class="image flex-1 mx-2">
             <div class="border rounded-lg overflow-hidden flex flex-col h-full">
               <!-- Set a fixed height for the card -->
-              <img src="{{ asset('img/image/blue.jpg') }}" alt="" class="w-full h-auto" />
+              <img src="{{ asset('img/image/info/info8.png') }}" alt="" class="w-full h-auto" />
               <div class="p-4 flex flex-col flex-grow">
-                <h5 class="text-lg font-bold">Formation Hotesse & steward</h5>
+                <h5 class="text-lg font-bold pb-3">Voyages organiser </h5>
                 <p class="text-gray-600">
-                  Sièges ergonomiques, divertissement personnel, service
-                  attentionné
+                  organise des voyages sur mesure, couvrant affaires, loisirs et pèlerinages, avec une flotte moderneé
                 </p>
                 <div class="mt-auto text-right">
                   <!-- Use mt-auto to push the button to the bottom -->
-                  <button
-                    class="bg-violet-950 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-3 rounded"
-                  >
-                    next
-                  </button>
+                 
                 </div>
               </div>
             </div>
@@ -217,19 +228,15 @@
           <div class="image flex-1 mx-2">
             <div class="border rounded-lg overflow-hidden flex flex-col h-full">
               <!-- Set a fixed height for the card -->
-              <img src="{{ asset('img/image/tran (1).png') }}" alt="" class="w-full h-auto" />
+              <img src="{{ asset('img/image/info/info7.png') }}" alt="" class="w-full h-auto" />
               <div class="p-4 flex flex-col flex-grow">
-                <h5 class="text-lg font-bold">Volez confortablement</h5>
+                <h5 class="text-lg font-bold pb-3">Notre flotte</h5>
                 <p class="text-gray-600">
-                  Assurant un confort adapté à vos besoins
+                  dispose d'une flotte diversifiée comprenant avions commerciaux, jets privés et cargos, offrant confort
                 </p>
                 <div class="mt-auto text-right">
                   <!-- Use mt-auto to push the button to the bottom -->
-                  <button
-                    class="bg-violet-950 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-3 rounded"
-                  >
-                    next
-                  </button>
+                 
                 </div>
               </div>
             </div>
@@ -242,24 +249,20 @@
             <div class="border rounded-lg overflow-hidden h-full flex flex-col">
               <!-- Set a fixed height for the card -->
               <img
-                src="{{ asset('img/image/Airlines Company Profile Presentation.png') }}"
+                src="{{ asset('img/image/info/info10.png') }}"
                 alt=""
                 class="w-full h-auto"
               />
               <div class="p-4 flex flex-col flex-grow">
-                <h5 class="text-lg font-bold">
-                  Explorez nos options de transportation
+                <h5 class="text-lg font-bold pb-3">
+                  Types de vols VIP
                 </h5>
                 <p class="text-gray-600">
-                  Recherchez les meilleures offres pour votre prochain vol
+                  propose des vols VIP personnalisés, incluant jets privés et première classel
                 </p>
                 <div class="mt-auto text-right">
                   <!-- Use mt-auto to push the button to the bottom -->
-                  <button
-                    class="bg-violet-950 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-3 rounded"
-                  >
-                    next
-                  </button>
+                 
                 </div>
               </div>
             </div>
@@ -269,20 +272,15 @@
           <div class="image flex-1 mx-2">
             <div class="border rounded-lg overflow-hidden flex flex-col h-full">
               <!-- Set a fixed height for the card -->
-              <img src="{{ asset('img/image/blue.jpg') }}" alt="" class="w-full h-auto" />
+              <img src="{{ asset('img/image/info/info9.png') }}" alt="" class="w-full h-auto" />
               <div class="p-4 flex flex-col flex-grow">
-                <h5 class="text-lg font-bold">Formation Hotesse & steward</h5>
+                <h5 class="text-lg font-bold pb-3">transfère aéroport </h5>
                 <p class="text-gray-600">
-                  Sièges ergonomiques, divertissement personnel, service
-                  attentionné
+                  propose des transferts aéroport privés, partagés et pour groupes, alliant confort 
                 </p>
                 <div class="mt-auto text-right">
                   <!-- Use mt-auto to push the button to the bottom -->
-                  <button
-                    class="bg-violet-950 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-3 rounded"
-                  >
-                    next
-                  </button>
+                 
                 </div>
               </div>
             </div>
@@ -292,19 +290,16 @@
           <div class="image flex-1 mx-2">
             <div class="border rounded-lg overflow-hidden flex flex-col h-full">
               <!-- Set a fixed height for the card -->
-              <img src="{{ asset('img/image/tran (1).png') }}" alt="" class="w-full h-auto" />
+              <img src="{{ asset('img/image/info/info11.png') }}" alt="" class="w-full h-auto" />
               <div class="p-4 flex flex-col flex-grow">
-                <h5 class="text-lg font-bold">Volez confortablement</h5>
+                <h5 class="text-lg font-bold pb-3">Transport Fret aérien 
+                </h5>
                 <p class="text-gray-600">
-                  Assurant un confort adapté à vos besoins
+                  offre des services de fret aérien fiables et rapides, adaptés aux besoins des entreprises et des particuliers
                 </p>
                 <div class="mt-auto text-right">
                   <!-- Use mt-auto to push the button to the bottom -->
-                  <button
-                    class="bg-violet-950 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-3 rounded"
-                  >
-                    next
-                  </button>
+                 
                 </div>
               </div>
             </div>
@@ -315,79 +310,33 @@
 
     <div class="section2">
       <div class="container">
-         <h4 class="mb-6 text-center"  style="color: aliceblue">
-                Faites votre choix avec nos forfaits
-              </h4>
-        <section class="container">
-           
-          <div class="card__container swiper">
-            <div class="card__content">
-            
-              <div class="swiper-wrapper">
-                <article class="card__article swiper-slide">
-                  <div class="card__image">
-                    <img
-                      src="{{ asset('img/image/photo14.png') }}"
-                      alt="image"
-                      class="card__img"
-                    />
-                  </div>
-                  <div class="card__data">
-                    <h3 class="card__name">Couple</h3>
-                    <p class="card__description">
-                      Tarifs réduits pour les billets d'avion, embarquement
-                      prioritaire et repas gratuits pour deux.
-                    </p>
-                    <a href="#" class="card__button">Voir plus</a>
-                  </div>
-                </article>
 
-                <article class="card__article swiper-slide">
-                  <div class="card__image">
-                    <img
-                      src="{{ asset('img/image/photo14.png') }}"
-                      alt="image"
-                      class="card__img"
-                    />
-                  </div>
-                  <div class="card__data">
-                    <h3 class="card__name">Famille</h3>
-                    <p class="card__description">
-                      Tarifs réduits pour les billets d'avion, embarquement
-                      prioritaire et repas gratuits pour deux.
-                    </p>
-                    <a href="#" class="card__button">Voir plus</a>
-                  </div>
-                </article>
-                <article class="card__article swiper-slide">
-                  <div class="card__image">
-                    <img
-                      src="{{ asset('img/image/photo14.png') }}"
-                      alt="image"
-                      class="card__img"
-                    />
-                  </div>
-                  <div class="card__data">
-                    <h3 class="card__name">Ami</h3>
-                    <!-- Translated "Friend" -->
-                    <p class="card__description">
-                      Tarifs réduits pour les billets d'avion, embarquement
-                      prioritaire et repas gratuits pour deux.
-                    </p>
-                    <!-- Translated Description -->
-                    <a href="#" class="card__button">Voir plus</a>
-                    <!-- Translated "View More" -->
-                  </div>
-                </article>
-              </div>
 
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+        <div class="pt-5">
+          <h1>NBR Event 2025</h1>
+          <p>Découvrez nos incroyables événements NBR et réservez votre place dès maintenant</p>
+        </div>
+      
+      
+        <div>
 
-              <div class="swiper-pagination"></div>
+            <div>
+            <a href=""><img src="" alt=""></a>
+            </div>
+
+            <div>
+             <a href=""><img src="" alt=""></a>
+            </div>
+
+
+            <div>
+            <a href=""><img src="" alt=""></a>
+            </div>
+
+            <div>
+              <a href=""><img src="" alt=""></a>
             </div>
           </div>
-        </section>
       </div>
     </div>
 
